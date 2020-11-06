@@ -23,6 +23,8 @@ Entradas de Ejemplo:
 
 3 Amarillo
 
+3 Azul
+
 4 4
 
 2   Rojo
