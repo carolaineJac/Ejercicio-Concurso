@@ -18,16 +18,26 @@ Para cada caso de prueba  se debe escribir  el numero del equipo en una linea . 
 Entradas de Ejemplo:
 
 4 3
+
 2 Rojo
+
 3 Amarillo
+
 4 4
+
 2   Rojo
+
 3 Amarillo
+
 3 Azul
+
 2 Verde
+
 0 0
 
 Salida de ejemplo:
+
 3
+
 Empate
 
