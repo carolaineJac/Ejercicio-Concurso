@@ -46,7 +46,7 @@ public class Main {
 				
 			}
 		}
-		for (int x = 0; x < equipos.length; x++) {
+		for (int x = 0; x < equipos.length; x++) { // comprueba si dos equipos o mas tienen el mismo puntaje para empate
 			if(equipos[ganador] == equipos[x] && ganador != x){
 				   System.out.println("Empate"); 
 				  return;  
