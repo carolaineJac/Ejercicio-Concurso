@@ -1,5 +1,4 @@
 package MainClass;
-import java.awt.List;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -25,6 +24,7 @@ public class Main {
 			
 			if(globos.size() == 0) {
 				globos.add(color);
+				equipos[Integer.parseInt(nEquipo)-1] += 1; // le agrega un punto cada vez que se selecciona un equipo.
 			}
 			else {
 				boolean existe = globos.contains(color);
@@ -33,27 +33,27 @@ public class Main {
 				}
 				else {
 					globos.add(color);
-					equipos[Integer.parseInt(nEquipo)-1] += 1;
+					equipos[Integer.parseInt(nEquipo)-1] += 1;   
 				}
-				
-				
 			}			
 		}
+		int puntaje = 0, ganador = 0;		
 		
-		int puntaje = equipos[0];
-		int ganador = 0;
-		
-		for (int x = 1; x < equipos.length; x++) {
-			if (equipos[x] > puntaje) {
+		for (int x = 0; x < equipos.length; x++) {
+			if (equipos[x] >= puntaje) {
 				puntaje = equipos[x];
 				ganador = x;
+				
+			}
+		}
+		for (int x = 0; x < equipos.length; x++) {
+			if(equipos[ganador] == equipos[x] && ganador != x){
+				   System.out.println("Empate"); 
+				  return;  
 			}
 		}
 		ganador += 1;
 		System.out.println("El ganador es: " + ganador);
-		
 	}
 
 }
-
-
